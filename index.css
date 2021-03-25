@@ -1,0 +1,168 @@
+*{
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body, head{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-flow:column;
+}
+
+/* --------------------first-tempalte------------------------------------ */
+
+#first-template{
+    width: 100%;
+    max-height: 700px;
+    height: 610px;
+    background-size: cover;
+    position: relative;
+    background-image: url('./img/hero.jpg');
+    background-size: cover;
+}
+
+.opacity-menu{
+    opacity: 0.6;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+#home-menu{
+    display:flex;
+    width: 100%;
+    height: 20%;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row;
+    position: relative;
+}
+
+#logo img{
+    height: 100px;
+    width: 100px;
+}
+
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow:row;
+}
+
+#menu a{
+    color: white;
+    margin: 20px;
+}
+
+#content{
+    display:flex;
+    max-width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column;
+    position: relative;
+    margin-left: 100px;
+}
+
+#navigation-title{
+    display: flex;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+}
+
+#more-naviation-title{
+    display:flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: flex-start;
+ }
+
+ #more-naviation-title button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 25px;
+    height: 40px;
+    width: 150px;
+    outline: none;
+    background: none;
+    border: solid 2px orange;
+ }
+
+ #more-naviation-title #button1{
+     color: white;
+     background-color: orange;
+ }
+
+ #more-naviation-title #button2{
+     color: orange;
+}
+
+/* ---------------------------second-template------------------------------------- */
+
+#second-template{
+    width: 100%;
+    max-height: 700px;
+    height: 610px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+}
+
+#feature1{
+    width: 100%;
+    height: 25%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+}
+
+#main-title{
+    font-size: 30px;
+}
+
+#orange-bar{
+    width:150px;
+    height: 2px;
+    background-color: orange;
+    margin-bottom: 5px;
+}
+
+#content-title{
+    font-size: large;
+}
+
+#feature2{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-flow: row;
+    height: 75%;
+    padding: 30px;
+}
+
+.title{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    display: flex;
+    flex-flow: column;
+    width: 25%;
+    margin: 15px;
+}
+

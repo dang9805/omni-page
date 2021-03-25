@@ -22,13 +22,12 @@ body, head{
     width: 100%;
     max-height: 700px;
     height: 610px;
-    background-size: cover;
     position: relative;
     background-image: url('./img/hero.jpg');
     background-size: cover;
 }
 
-.opacity-menu{
+#first-template .opacity-menu{
     opacity: 0.6;
     background-color: black;
     height: 100%;
@@ -36,7 +35,7 @@ body, head{
     position: absolute;
 }
 
-#home-menu{
+#first-template #home-menu{
     display:flex;
     width: 100%;
     height: 20%;
@@ -46,24 +45,24 @@ body, head{
     position: relative;
 }
 
-#logo img{
+#first-template #logo img{
     height: 100px;
     width: 100px;
 }
 
-#menu{
+#first-template #menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-flow:row;
 }
 
-#menu a{
+#first-template #menu a{
     color: white;
     margin: 20px;
 }
 
-#content{
+#first-template #content{
     display:flex;
     max-width: 100%;
     height: 80%;
@@ -74,21 +73,21 @@ body, head{
     margin-left: 100px;
 }
 
-#navigation-title{
+#first-template #navigation-title{
     display: flex;
     font-family: sans-serif;
     font-size: 30px;
     color: white;
 }
 
-#more-naviation-title{
+#first-template #more-naviation-title{
     display:flex;
     flex-flow: row;
     justify-content: space-around;
     align-items: flex-start;
  }
 
- #more-naviation-title button{
+ #first-template #more-naviation-title button{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -100,12 +99,12 @@ body, head{
     border: solid 2px orange;
  }
 
- #more-naviation-title #button1{
+ #first-template #more-naviation-title #button1{
      color: white;
      background-color: orange;
  }
 
- #more-naviation-title #button2{
+ #first-template #more-naviation-title #button2{
      color: orange;
 }
 
@@ -121,7 +120,7 @@ body, head{
     flex-flow: column;
 }
 
-#feature1{
+#second-template #feature1{
     width: 100%;
     height: 25%;
     justify-content: space-around;
@@ -130,22 +129,22 @@ body, head{
     flex-flow: column;
 }
 
-#main-title{
+#second-template #main-title{
     font-size: 30px;
 }
 
-#orange-bar{
+.orange-bar{
     width:150px;
     height: 2px;
     background-color: orange;
     margin-bottom: 5px;
 }
 
-#content-title{
+#second-template #content-title{
     font-size: large;
 }
 
-#feature2{
+#second-template #feature2{
     width: 100%;
     justify-content: space-around;
     align-items: center;
@@ -155,7 +154,7 @@ body, head{
     padding: 30px;
 }
 
-.title{
+#second-template .title{
     height: 100%;
     justify-content: center;
     align-items: center;
@@ -166,3 +165,60 @@ body, head{
     margin: 15px;
 }
 
+/* --------------------------img-template---------------------------------------- */
+
+#img-template{
+    background-image: url(./img/part3.png);
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+    position: inherit;
+}
+
+/* -----------------------------third-tempalte----------------------------------------- */
+
+#third-template{
+    width: 100%;
+    max-height: 700px;
+    height: 610px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+}
+
+#third-template #title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#third-template #title p{
+    font-size: 30px;
+}
+
+#third-template #content{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#third-template #icon1{
+    height: 80%;
+    width: 15%;
+    background-image: url(./img/app-iPhone.png);
+    background-size: cover;
+}
+
+#third-template #how-it-work{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    width: 50%;
+}

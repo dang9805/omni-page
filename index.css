@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 *{
     font-family: sans-serif;
     margin: 0px;
@@ -14,6 +17,16 @@ body, head{
     align-items: center;
     display: flex;
     flex-flow:column;
+}
+
+.orange-bar{
+    width:150px;
+    height: 2px;
+    background-color: orange;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* --------------------first-tempalte------------------------------------ */
@@ -133,13 +146,6 @@ body, head{
     font-size: 30px;
 }
 
-.orange-bar{
-    width:150px;
-    height: 2px;
-    background-color: orange;
-    margin-bottom: 5px;
-}
-
 #second-template #content-title{
     font-size: large;
 }
@@ -155,26 +161,42 @@ body, head{
 }
 
 #second-template .title{
-    height: 100%;
+    height: fit-content;
     justify-content: center;
     align-items: center;
     font-size: large;
     display: flex;
     flex-flow: column;
-    width: 25%;
-    margin: 15px;
+    width: 250px;
+    margin-left: auto;
+}
+
+#second-template .title i{
+    color: orange;
+    font-size: 50px;
+    line-height: 70px;
+    display:flex;
+    margin-right: auto;
 }
 
 /* --------------------------img-template---------------------------------------- */
 
 #img-template{
-    background-image: url(./img/part3.png);
-    background-size: cover;
-    width: 100%;
+    max-width: 100%;
+    max-height: 450px;
     height: 450px;
-    position: inherit;
+    width: 100%;
+    position:relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
 }
 
+#img-template img{
+    width: 25%;
+    height: 240px;
+}
 /* -----------------------------third-tempalte----------------------------------------- */
 
 #third-template{
@@ -214,6 +236,8 @@ body, head{
     width: 15%;
     background-image: url(./img/app-iPhone.png);
     background-size: cover;
+    margin-left: 100px;
+    position: relative;
 }
 
 #third-template #how-it-work{
@@ -221,4 +245,272 @@ body, head{
     flex-flow: column;
     height: 100%;
     width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    
 }
+
+#third-template #how-it-work #descriptions{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    margin-left: 100px;
+}
+
+#third-template #content .title{
+    width: 100%;
+    height: fit-content;
+    font-size: large;
+    margin: 30px 0px 30px 0px;
+    display: flex;
+    flex-flow: row;
+}
+
+#third-template #content #img1{
+    height: 60px;
+    width: 150px;
+    margin-right: 10px;
+}
+
+#third-template #content #img2{
+    height: 59px;
+    width: 200px;
+}
+
+#third-template #content i{
+    color: orange;
+    font-size: 50px;
+    line-height: 50px;
+    display:flex;
+}
+
+/* ------------------------------------fourth-tempalte------------------------------------ */
+
+#fourth-template{
+    width: 100%;
+    max-height: 700px;
+    height: 610px;
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fourth-template #title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fourth-template #title p{
+    font-size: 30px;
+}
+
+#fourth-template #content{
+    width:100%;
+    height: 60%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+#fourth-template #location img{
+    width: 200px;
+    height: 150px;
+}
+
+#fourth-template #customer-img{
+    width:100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ #fourth-template #customer-img img{
+     border-radius: 25px;
+     width: 40px;
+     margin-right: auto;
+     margin-left: 100px;
+ }
+
+/* ------------------------------------fifth-template---------------------------------------- */
+
+#fifth-template{
+    width: 100%;
+    max-height: 700px;
+    height: 610px;
+    position: relative;
+    background-color: whitesmoke;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fifth-template #title{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ #fifth-template #title p{
+     font-size: 30px;
+ } 
+
+#fifth-template #content{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+}
+
+#fifth-template .content-box{
+    height: 70%;
+    width: 20%;
+    margin: 0px 35px 20px 35px;
+    position: inherit;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 8px;
+    border: solid 2px lightgray;
+}
+
+#fifth-template .price-box{
+    width: 100%;
+    height: 35%;
+    border-bottom: solid 2px lightgray;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 10px 0px 7px 10px;
+ }
+
+ .price{
+     font-size: 40px;
+     color: orange;
+ }
+
+ .per-month{
+     font-size:medium;
+ }
+
+#fifth-template .lists-box{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 10px;
+    width: 100%;
+    height: 45%;
+    border-bottom: solid 2px lightgray;
+}
+
+#fifth-template .signin-box{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+ }
+
+ #fifth-template .signin-box button{
+    height: 35px;
+    width: 130px;
+    border-radius: 25px;
+    color: orange;
+    border: solid 2px darkorange;
+ }
+
+ #fifth-template #special-btn{
+     color: white;
+     background-color:darkorange; 
+     border: solid 2px darkorange;
+ }
+
+/* -----------------------------------sixth-tempalte--------------------------------- */
+
+#sixth-template{
+    width: 100%;
+    max-height: 500px;
+    height: 400px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 20px;
+    position: relative;
+}
+
+#sixth-template #heading{
+    font-size: 30px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 15%;
+}
+
+#special-orange-bar{
+    width:100px;
+    height: 2px;
+    background-color: orange;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 200px;
+    position: relative;
+}
+
+#sixth-template #info-place{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+#sixth-template #fill-out-info{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+#sixth-template .info{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-flow: row;
+ }
+
+ #sixth-template .info p{
+    display: flex;
+    align-items: flex-start;
+ }
